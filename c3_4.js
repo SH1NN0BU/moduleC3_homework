@@ -14,3 +14,9 @@ ElectricalAppliance.prototype.plugIn = function() {
     console.log(this.name + " is plugged!");
     this.isPlugged = true;
 };
+
+// метод, который определяет прибор как выключеный из розетки
+ElectricalAppliance.prototype.unplug = function() {
+    console.log(this.name + " is unplugged!");
+    this.isPlugged = false;
+  };
