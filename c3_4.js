@@ -40,6 +40,22 @@ function Computer(name, brand, power, type, functionality) {
     this.type = type;
     this.functionality = functionality;
     this.isPlugged = false;
-  }
+}
   
   Computer.prototype = new ElectricalAppliance();
+
+// экземпляр лампы
+const tableLamp = new Lamp("Table lamp", "Xiaomi", 5, "LED");
+
+// экземпляр компьютера
+const homePC = new Computer("Table PC", "Intel", 120, "stationary", "for work");
+
+// отключить лампу из розетки
+tableLamp.unplug();
+
+// включить homePC в розетку
+homePC.plugIn();
+
+// результат
+console.log(homePC)
+console.log(tableLamp)
