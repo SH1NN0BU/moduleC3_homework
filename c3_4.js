@@ -29,3 +29,17 @@ function Lamp(name, brand, power, bulbType) {
     this.bulbType = bulbType;
     this.isPlugged = true;
 }
+
+Lamp.prototype = new ElectricalAppliance();
+
+// Прибор 2
+function Computer(name, brand, power, type, functionality) {
+    this.name = name;
+    this.brand = brand;
+    this.power = power;
+    this.type = type;
+    this.functionality = functionality;
+    this.isPlugged = false;
+  }
+  
+  Computer.prototype = new ElectricalAppliance();
