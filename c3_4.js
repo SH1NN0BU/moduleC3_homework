@@ -19,4 +19,13 @@ ElectricalAppliance.prototype.plugIn = function() {
 ElectricalAppliance.prototype.unplug = function() {
     console.log(this.name + " is unplugged!");
     this.isPlugged = false;
-  };
+};
+
+// Прибор 1
+function Lamp(name, brand, power, bulbType) {
+    this.name = name;
+    this.brand = brand;
+    this.power = power;
+    this.bulbType = bulbType;
+    this.isPlugged = true;
+}
